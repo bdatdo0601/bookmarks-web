@@ -16,7 +16,7 @@ const styles = theme => ({
     },
     rootWeb: {
         flexGrow: 1,
-        height: 430,
+        height: "100%",
         zIndex: 1,
         overflow: "hidden",
         position: "relative",
@@ -26,6 +26,7 @@ const styles = theme => ({
         flexGrow: 1,
         backgroundColor: theme.palette.background.default,
         padding: theme.spacing.unit * 3,
+        height: "100%",
     },
     toolbarWeb: {
         display: "flex",
@@ -34,7 +35,9 @@ const styles = theme => ({
         padding: "0 8px",
         ...theme.mixins.toolbar,
     },
-    contentMobile: {},
+    contentMobile: {
+        height: "100%",
+    },
     toolbarMobile: theme.mixins.toolbar,
 });
 
