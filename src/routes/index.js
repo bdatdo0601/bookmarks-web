@@ -1,4 +1,5 @@
 import Home from "../containers/Home";
+import Login from "../containers/Login";
 import Errors from "../containers/Errors";
 
 export const MAIN_ROUTES = Object.freeze([
@@ -8,6 +9,13 @@ export const MAIN_ROUTES = Object.freeze([
         PATH: `${process.env.PUBLIC_URL}/`,
         EXACT: true,
         COMPONENT: Home,
+    },
+    {
+        TITLE: "Login",
+        DESCRIPTION: "Login Page",
+        PATH: `${process.env.PUBLIC_URL}/login`,
+        EXACT: true,
+        COMPONENT: Login,
     },
 ]);
 
