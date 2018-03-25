@@ -15,10 +15,10 @@ const styles = theme => ({
         width: "100%",
     },
     rootWeb: {
-        flexGrow: 1,
         height: "100%",
         zIndex: 1,
-        overflow: "hidden",
+        width: "100%",
+        overflow: "auto",
         position: "relative",
         display: "flex",
     },
@@ -27,6 +27,7 @@ const styles = theme => ({
         backgroundColor: theme.palette.background.default,
         padding: theme.spacing.unit * 3,
         height: "100%",
+        width: "90%",
     },
     toolbarWeb: {
         display: "flex",
